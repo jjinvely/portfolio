@@ -1,0 +1,114 @@
+
+body{
+margin: 0 auto;
+font-family: 'Montserrat', sans-serif;
+background-color: var(--color-yellow);}
+
+#body{
+    position:absolute;
+    right:0px;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    
+}
+
+/*스크롤*/
+.scroll {
+    position: fixed;
+    left: 10px; 
+    bottom: 10px;
+    color: #fff;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 100;
+    background: rgba(0,0,0,0.3);
+    width: 100px; 
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 10000;
+}
+
+
+.body__wrap{position:relative;
+z-index: 0;}
+
+/* 링크 초기화 */
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+li{list-style:none;}
+.box{position:relative;}
+.box-header-img:before{padding-top: 52.71084%;}
+.box:before{content:''; display:block;}
+
+:root{
+--color-transparent: transparent;
+--color-current: currentColor;
+--color-black: #13100f;
+--color-white: #fff;
+--color-dark-white:#f7f5ee;
+--color-beige: #fff1c3;
+--color-light-yellow:#f6ef73;
+--color-yellow: #fece62;
+--color-blue:#3a71b4;
+--color-green: #b9b8a0;
+--color-brown: #584939;
+--color-orange: #e94f1d;
+--color-red: #dc6e3f;
+--color-banner: #db6437;}
+
+*, :after, :before{box-sizing: border-box;}
+
+/*스타일초기화*/
+button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    line-height: 1.15;
+} 
+
+input, textarea {
+    -webkit-appearance: none;
+    display: block;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 4px solid;
+    font-size: 18px;
+    line-height: 1.39278;
+    margin: 0;
+    padding: 20px 14px;
+    width: 100%;
+}
+    
+img {
+    vertical-align: top;
+    width: 100%;
+    display: block;
+}
+
+/*간격*/
+.container-fluid {
+    padding-left: 3.88889vw;
+    padding-right: 3.88889vw;
+}
+.py-3{padding-top:20px;
+    padding-bottom:20px;}
+
+
+/*display*/
+.d-lg-none{display:none;}
+
+.tt-upper{text-transform: uppercase;}
+
+

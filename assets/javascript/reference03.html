@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <title>자바스크립트를 자바라!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/js.css" />  
+  <link rel="stylesheet" href="assets/css/fonts.css" /> 
+  <link rel="stylesheet" href="assets/css/style.css" />  
+  <link href="assets/css/prism.css" rel="stylesheet" />
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/prism.js"></script>
+  <script src="assets/js/script.js"></script>
+ 
+  
+  </head>
+
+  <body>
+    <header id="header">
+        <h1><a href="javascript.html">Javascript</a></h1>
+        <nav>
+            <ul>
+                <li><a href="reference01.html">기초 문법</a></li>
+                <li><a href="reference02.html">변수</a></li>
+                <li class="active"><a href="reference03.html">자료형</a></li>
+                <li><a href="reference04.html">for문</a></li>
+                <li><a href="reference05.html">연산자</a></li>
+                <li><a href="reference06.html">조건문</a></li>
+                <li><a href="reference07.html">반복문</a></li>
+                <li><a href="reference08.html">함수</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main">
+        <div class="doc">
+            <h2>데이터 타입(자료형)</h2>
+            <p>
+                변수에는 여러가지 유형이 들어갈 수 있습니다. 
+                프로그램 언어에 있어 가장 기본적인 요소이며, 데이터 타입이라고 합니다. 
+                데이터 타입에는 숫자, 문자열, 논리값, 특수값, 심벌, 객체, 배열
+                함수 등을 표현할 수 있습니다.
+            </p>
+
+            <h3>숫자(Number)</h3>
+            <p><strong>숫자형(Number)</strong> 데이터는 단어 의미 그대로 숫자를 의미합니다. 만약 "100"과 같이 큰따옴표가 숫자를 감싸고 있다면 숫자가 아닌 문자형 데이터입니다. 이 경우에는 Number("100")를 이용하면 문자형 데이터를 숫자형 데이터로 바꿀 수 있습니다.</p>
+            <div class="code">
+<pre><code>var 변수 = 숫자; 또는 Number("문자형 숫자");
+
+var s = 100;
+var t = Number("500"); //"500" -&gt; 500
+</code></pre>
+            </div>
+
+            <h3>문자열(String)</h3>
+            <p><strong>문자형(String)</strong> 데이터는 다음과 같이 문자나 숫자를 큰따옴표("") 또는 작은따옴표('')로 감싸고 있습니다. 또한 문자형 데이터에 HTML 태그를 포함하여 출력하면 태그로 인식합니다.</p>
+            <div class="code">
+<pre><code>var 변수="사용할 문자나 숫자";
+
+var s = "javascript";
+var num = "100";
+var tag = "&lt;h1&gt;String&lt;/h1&gt;";
+</code></pre>
+            </div>
+
+            <h3>논리값(Boolean)</h3>
+            <p><strong>논리형(Boolean)</strong> 데이터는 true(참) 또는 false(거짓)가 있습니다. 이 데이터는 주로 2개의 데이터를 비교할 때 나오는 결과입니다. 예를 들어 '100보다 10이 크다'는 잘못된 비교이므로 false라는 결과를 반환하게 됩니다. 논리형 데이터의 기본형은 다음과 같습니다.</p>
+            <div class="code">
+<pre><code>var 변수=true or false; 또는 Boolean(데이터);
+
+var s = ture;
+var t = 10 &gt;= 100;       //false
+var k = Boolean("hello"); //ture
+</code></pre>
+            </div>
+
+            <h3>특수값(Null)</h3>
+            <p><strong>Null</strong>은 변수에 저장된 값이 null인 경우를 가리킵니다. null은 변수에 저장된 데이터를 비우고자 할 때 사용하는 값입니다.</p>
+            <div class="code">
+<pre><code>var s;
+var t = hello;
+t = null;</code></pre>
+            </div>
+
+            <h3>특수값(Undefined)</h3>
+            <p><strong>Undefined</strong>는 '값이 할당되지 않은 상태’를 나타낼 때 사용합니다. 변수는 선언했지만, 값을 할당하지 않았다면 해당 변수에 undefined가 자동으로 할당됩니다.</p>
+            <div class="code">
+<pre><code>let age;
+
+alert(age); // 'undefined'가 출력됩니다.
+</code></pre>
+            </div>
+
+            <h3>심벌(Symbol)</h3>
+            <p><strong>심벌(symbol)</strong>형은 객체의 고유한 식별자(unique identifier)를 만들 때 사용됩니다. 심벌 타입은 객체의 프로퍼티 키를 고유하게 설정함으로써 프로퍼티 키의 충돌을 방지합니다.</p>
+            <div class="code">
+<pre><code>// Create symbols
+const sym1 = Symbol();
+const sym2 = Symbol('foo');
+const sym3 = Symbol('bar');
+
+// Print symbols (use the description that was specified when calling Symbol function)
+console.log(sym1);  // Symbol()
+console.log(sym2);  // Symbol(foo)
+console.log(sym3);  // Symbol(bar)
+
+// Check type of symbol
+console.log(typeof sym1);  // symbol
+console.log(typeof sym2);  // symbol
+console.log(typeof sym3);  // symbol
+</code></pre>
+            </div>
+            <h3>객체(Object)</h3>
+            <p><strong>객체(object)</strong>형은 특수한 자료형입니다. 객체형을 제외한 다른 자료형은 문자열이든 숫자든 한 가지만 표현할 수 있기 때문에 원시(primitive) 자료형이라 부릅니다. 반면 객체는 데이터 컬렉션이나 복잡한 개체(entity)를 표현할 수 있습니다.</p>
+            <div class="code">
+<pre><code>const obj = new Object();
+
+obj[0] = 100;
+obj[1] = 200;
+obj[2] = "javascript";
+
+document.write(obj[0]);
+document.write(obj[1]);
+document.write(obj[2]);</code></pre>
+            </div>
+            
+            <h3>배열(Array)</h3>
+            <p><strong>배열(Array)</strong>은 하나의 변수에 여러개의 데이터를 넣을 수 있는 자료형입니다. 배열은 []나 newArray()로 생성하며, 크기의 제약이 없고, 하나의 배열에 서로 다른 타입의 변수가 들어갈 수 있습니다.</p>
+            <div class="code">
+<pre><code>var array = new Array(2,4,5,"a",'b');</code></pre>
+            </div>
+
+            <h3>함수(Function)</h3>
+            <p><strong>함수(function)</strong>란 하나의 특별한 목적의 작업을 수행하도록 설계된 독립적인 블록을 의미합니다. 이러한 함수는 필요할 때마다 호출하여 해당 작업을 반복해서 수행할 수 있습니다.자바스크립트에서는 함수도 하나의 타입(datatype)입니다. 따라서 함수를 변수에 대입하거나, 함수에 프로퍼티를 지정하는 것도 가능합니다. 또한, 자바스크립트 함수는 다른 함수 내에 중첩되어 정의될 수도 있습니다.</p>
+            <div class="code">
+<pre><code>function 함수이름(매개변수1, 매개변수2,...) {
+
+    함수가 호출되었을 때 실행하고자 하는 실행문;
+
+}</code></pre>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

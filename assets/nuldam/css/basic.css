@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+img,
+a,
+fieldset {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+.w160 {
+  width: 160px;
+}
+.w100p {
+  width: 100%;
+}
+
+input[type='text'] {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 45px;
+  padding: 0 10px;
+  border-color: #ccc;
+  background-color: #fff;
+  font-size: 15px;
+  line-height: normal;
+}
+
+input[type='password'],
+[type='tel'] {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 45px;
+  padding: 0 10px;
+  border-color: #ccc;
+  background-color: #fff;
+  font-size: 15px;
+  line-height: normal;
+}
+
+input[type='tel'] {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 45px;
+  padding: 0 10px;
+  border-color: #ccc;
+  background-color: #fff;
+  font-size: 15px;
+  line-height: normal;
+}
+
+input[type='radio'].css-radio {
+  overflow: hidden;
+  position: absolute;
+  left: -1000px;
+  width: 1px;
+  height: 1px;
+}
+
+input[type='radio'].css-radio + label {
+  display: inline-block;
+  padding-left: 20px;
+  margin-right: 20px;
+  background-image: url('../img/bg_radio.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type='radio'].css-radio + label {
+  background-position: 0 -50px;
+}
+
+input[type='checkbox'].css-checkbox + label {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 30px;
+  background-image: url('../img/bg_checkbox.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type='checkbox'].css-checkbox {
+  overflow: hidden;
+  position: absolute;
+  left: -1000px;
+  width: 1px;
+  height: 1px;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/*버튼*/
+.btn_line {
+  text-align: center;
+  font-size: 0;
+  padding: 20px 0;
+}
+
+.txt_right {
+  text-align: right;
+}
+
+.btn_baseColor {
+  display: inline-block;
+  width: 125px;
+  height: 50px;
+  line-height: 50px;
+  background-color: darkblue;
+  font-size: 20px;
+  color: #fff;
+}

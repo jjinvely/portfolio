@@ -1,0 +1,157 @@
+@media (max-width: 1200px){
+  .heading-h1 {
+    font-size: 16.66667vw;
+  }
+
+
+  .banner__title{
+    font-size: 20px;
+  }
+
+  .script {
+    grid-template-columns: 1fr 1fr 312px;
+    grid-gap: 60px 3.88889vw;
+    padding-top: 100px;
+  }
+
+  .script__content {
+    grid-column: 3/span 1;
+  }
+
+}
+
+@media (max-width: 992px){
+  .header__wrap{justify-content: flex-end;}
+
+   .header__burger{
+    display:block;}
+
+    .header__nav {
+      display: none;
+    }  
+    .header__nav.active{    
+      display: flex;
+    }
+
+    .header__nav.active .header__menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+
+  .header__nav.active .menu-item{padding: 10px 20px;
+  font-size:10vw;}
+
+  .swiper-button-prev, .swiper-button-next {display: none;}
+
+  .about{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;}
+
+  .about__des{
+  text-align: justify;
+  max-width: 400px;
+  padding-top:50px;}
+
+
+ .listing__card-description{font-size:18px;}
+
+ .listing__card-tags li{font-size:18px;}
+ 
+
+ .listing__expand-link{padding:10px;
+ }
+
+
+ .listing__expand-a{font-size:18px;
+}
+
+
+  .script {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 60px 20px;
+  }
+
+  .script__header {
+    grid-column: 1/span 2;
+  }
+
+  .script__content {
+    display:grid;
+    grid-column: 1/span 2;
+    padding-top:40px;
+    grid-gap:20px;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .script__link {
+    place-self: center;
+  }
+
+  .script__content img{display:none;}
+
+  .footer__utils {
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 768px){
+ .home__header__wrap {
+    padding-top: 28.98551vw;
+    padding-bottom: 14.49275vw;
+  }
+
+  .textflow__title{padding-top:0;}
+
+  
+  .textflow{padding-bottom:20px;}
+  .eye{top:30%;}
+
+  .arrow-link {
+    width: 66px;
+    height: 51px;}
+
+  .heading-h1{font-size: 17.8744vw;}
+
+  .script {
+    display:flex;
+    flex-direction:column;
+    padding-bottom: 50px;
+  }
+
+  .script__header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .script__pageWrap {
+    margin-bottom:300px;}
+
+  .script__link {
+    place-self: start;
+  }
+  
+    .script__content{
+   display:flex;
+   flex-direction:column;
+  }
+  
+  .script__wysiwyg{font-size:22px;}
+  .script__link{margin-top:30px;}
+  
+  .footer__utils {
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    justify-content: space-between;
+  }
+
+}
+
+
+
