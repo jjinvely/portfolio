@@ -31,10 +31,10 @@
   dots: true,
   fade: true,
   pauseOnHover: true,
-  arrows: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  arrows: false, //옆으로 이동하는 화살표 표시 여부
+  infinite: true, //무한반복
+  autoplay: true, //자동 스크롤 여부
+  autoplaySpeed: 3000, // 자동 스크롤시 다음으로 넘어가는데 걸리는 시간
   speed: 300,
   slidesToShow: 1
   });
