@@ -1,0 +1,30 @@
+
+
+
+
+
+.outwear__content .item__list{
+  margin-bottom:50px;
+  font-style: 0px;
+  margin-right: -1%;
+  margin-left:-1%;
+  letter-spacing:0;
+  
+}
+
+
+.outwear__content .item__list >li{
+  position:relative;
+  display: inline-block;
+  margin:0px 0 50px;
+  color:#757575;
+  vertical-align: top;
+width: 21.3%;
+padding: 1% 1%;
+}
+
+
+.outwear__Content .item__list .thumbnail img{
+  max-width: 100%;
+  box-sizing: border-box;
+}

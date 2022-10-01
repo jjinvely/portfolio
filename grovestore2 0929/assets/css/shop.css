@@ -1,0 +1,50 @@
+
+
+
+.outwear__content .item__list{
+  margin-bottom:50px;
+  font-style: 0px;
+  margin-right: -1%;
+  margin-left:-1%;
+  letter-spacing:0;
+  
+}
+
+.outwear__content .item__list >li{
+  position:relative;
+  display: inline-block;
+  margin:0px 0 50px;
+  vertical-align: top;
+  width: 21.3%;
+  padding: 1% 1%;
+}
+
+.outwear__content .item__list .thumbnail img{
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.item__list .thumbnail{
+  position: relative;
+  overflow:hidden;
+  margin:0 10px 0 0;
+  background-color: #fbfbfc;
+}
+
+.item__list .desc{
+  text-align: center;
+  position: relative;
+  padding: 8px 0 0 0;
+  font-family: 'GothicA1-Light';
+}
+
+.item__list .desc .name{
+  margin: 0 0 13px 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.item__list .desc .price{ 
+  font-size: 16px;
+  color:#000;
+  font-family: 'GothicA1-Light';
+}

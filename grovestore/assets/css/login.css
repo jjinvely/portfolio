@@ -1,0 +1,56 @@
+
+/*login*/
+.login{
+  margin:110px auto;
+  width: 500px;
+}
+
+.login__title{text-align:center;}
+
+.login__box{}
+
+.login__box li{
+  margin:0 0 15px;
+}
+
+.login__box li label{
+  display: block;
+  margin:15px 0 5px;
+  font-size:10px;
+}
+
+
+.login__box input[type=text], .login__box input[type=password]{
+  width: 100%;
+  background-color: transparent;
+  box-sizing:border-box;
+  padding:7px;
+  color:#9a9a9a;
+  font-size:12px;
+  border:1px solid #000;
+}
+
+.btn{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  min-width:180px;
+  font-size:13px;
+  position:relative; 
+  color:#fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.btn01{ background-color: #000;}
+.btn02{ background-color: rgb(93, 91, 91);}
+
+
+.forgotten{
+  margin:15px 0 0;
+  font-size:13px;
+}
+
+.forgotten li{float:left;
+margin-right:10px;}
+
+.forgotten li a{text-decoration: underline;}

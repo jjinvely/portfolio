@@ -1,0 +1,97 @@
+.row{
+  padding:110px 20px 0;
+  max-width: 1440px;
+  margin:0 auto;
+}
+
+
+.text__title{
+  font-size: 34px;
+  line-height: 1.0;
+  font-weight: 700;
+  color:#000;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  margin: 0px 0px 50px;
+}
+
+
+
+thead{
+  vertical-align: middle;
+}
+
+caption{display: none;}
+
+
+
+legend{
+  visibility: hidden;
+  position: absolute;
+  left:-9999px;
+  top:-9999px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+
+/*게시물검색*/
+.board{
+  margin: 20px 0;
+  padding:11px 0 50px 0;
+}
+
+.boardSearch select{
+    width: auto;
+    height: 43px;
+    position: relative;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+    z-index: 2;
+    padding: 13px 35px 13px 10px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;    
+    background-image: url(../img/down.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: calc(100% - 10px);
+    background-size: 14px 14px;
+} 
+
+.boardSearch input{
+  padding:13px 10px;
+  height: 43px;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+}
+
+.boardSearch .b-btn{
+  color:#fff;
+  background-color: #444;
+  border:0px;
+  width:150px;
+  padding: 15px 5px;
+  font-size: 11px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.btn{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  min-width:180px;
+  font-size:13px;
+  position:relative; 
+  color:#fff;
+  text-align: center;
+  border-radius: 5px;
+}
