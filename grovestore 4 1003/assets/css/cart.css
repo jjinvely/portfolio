@@ -1,0 +1,39 @@
+
+.cart{height: 50vh;}
+
+.cart__desc{
+  letter-spacing: 0;
+  text-align: center;
+  padding:20px 0;
+}
+  
+.cart__btn{
+  text-align: center;
+  padding:20px 0;
+}
+  
+.cart__btn .c-btn{display: inline-block;}
+
+.c-btn>a{
+  padding:8px 20px;
+  display: block; 
+  transition:all 0.3s;}
+
+.c-btn.allorder>a{
+  border:1px solid #000;
+  background-color: #000;
+  color:#fff;
+}
+
+.c-btn.selectorder>a{
+  border:1px solid #dfdfdf;
+}
+
+.c-btn.allorder>a:hover{
+  background-color: #fff;
+  color:#000;}
+
+.c-btn.selectorder>a:hover{
+  background-color: #dfdfdf;
+}
+  

@@ -1,0 +1,210 @@
+.product__detail{position: relative;
+display: flex;}
+
+.detail__center{
+  width: 50%;
+  margin:0;
+  text-align: center;
+}
+
+.swiper-slide{
+  flex-shrink:0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property:transform;
+}
+
+.swiper-slide img{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.detail__right{width: 50%;
+font-size: 13px;
+box-sizing: border-box;
+overflow: hidden;}
+
+.detail__right .detail__scroll-fixed{
+  display: inline-block;
+  padding:10vh 5vw;
+  max-width: 800px;
+  max-height: 100vh;
+  overflow-y:scroll;
+}
+
+.detail__scroll-fixed{
+  text-align: center;
+  position: sticky;
+  top:0;
+  right:0;
+  width:100%;
+}
+
+.detail__scroll-container{
+  width: 100%;
+  height:auto;
+}
+
+.detail__content{line-height: 20px;}
+
+.infoArea{overflow: hidden;}
+
+
+.product__detaildesign{text-align: left;}
+
+
+table{width:100%;
+border-spacing: 0;
+border-collapse:collapse;}
+
+.price__txt{
+  text-decoration: line-through;
+}
+
+caption{display: none;}
+table tbody,table tr{
+  border:1px solid transparent;
+}
+
+.infoArea th{
+  display: none;
+  font-weight: normal;
+  width: 115px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.infoArea td{
+  padding:0;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+
+.relation .relationlist{
+  margin:10px 0 0;
+  text-align: left;
+}
+
+.relationlist h3{
+  letter-spacing: 0;
+  padding-top:5px;
+  padding-bottom:10px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.prdList{
+  margin:0 -7px;
+}
+
+.prdList .item{
+  width: 16.6667%;
+  margin-bottom:10px;
+  padding:0 7px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  line-height: 1.5;
+  margin-right: -4px;
+}
+
+li.item .box{position: relative;}
+
+
+li.item .box a{display: block;
+position: relative;}
+
+.thumb-box{
+  position:relative;
+  display: block;
+  overflow:hidden;
+}
+
+li.item .thumb{opacity:1;}
+
+.product__option tr:first-child th{
+  vertical-align: top;
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  border: 0;
+  font-weight: normal;
+}
+
+.product__option tr td{display: block;
+padding:5px 0;
+text-align: left;}
+
+.product__option select{
+  width: 100%;
+  height: 43px;
+  position: relative;
+  border-radius: 0;
+  display: inline-block;
+  margin:0;
+  vertical-align: middle;
+  border: 1px solid #ebebeb;
+  z-index:2;
+  padding:13px 35px 13px 10px;
+  cursor:pointer;
+  outline:none;
+  appearance: none;
+  transition:border 300ms ease;
+  background-image: url(../img/down.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 10px);
+  background-size:14px 14px;
+}
+
+.totalPrice{
+  display: block;
+  margin:15px 0 0;
+  padding:0;
+  color:#000;
+  vertical-align: middle;
+  background-color: transparent;
+  text-align: left;
+}
+
+.productAction{
+  text-align: left;
+  padding:20px 0;
+}
+
+.s-btn.buy{
+  background:#444;
+}
+
+.s-btn{
+  margin-bottom: 10px;
+  color:#fff;
+  border:0px;
+  position: relative;
+  width: 100%;
+  padding: 15px 5px;
+  font-size: 11px;
+  color: #fff;
+  background: #999999;
+  border: 0px;
+  border-radius: 0;
+  font-weight: normal;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+.tabsArea{padding-left:0;}

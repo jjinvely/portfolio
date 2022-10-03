@@ -1,0 +1,35 @@
+
+/*collection site*/
+.collection__wrap ul{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.collection__wrap li{
+  flex:0 0 30%;
+  margin: 20px 20px;
+}
+
+.collection__wrap ul li:hover a{
+  opacity:0.5;
+}
+
+.collection__page{
+  width: 100%;
+  text-align: center;
+  padding:20px 0px;
+  display: inline-block;
+}
+
+.collection__page a{
+  padding:5px 8px;
+  font-size: 13px;
+}
+
+.collection__page ol, 
+.collection__page p, 
+.collection__page ol li{
+  display: inline-block;
+  vertical-align: middle;
+}
+
