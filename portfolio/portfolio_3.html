@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeojin's Portfolio</title>       
+    <!--SEO(검색엔진최적화)-->
+    <meta name="author" content="yeojin" />
+    <meta name="description" content="portfolio" />
+    <meta
+      name="keywords"
+      content="웹접근성, 웹표준, 포트폴리오, html, css, javascript, 웹퍼블리셔"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/work.css">
+    <link rel="stylesheet" href="assets/css/script.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+</head>
+<div>    
+    <!--Navbar-->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <a href="#">YeoJin</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#works">Works</li>
+        <li class="navbar__menu__item" data-link="#script">script</li>   
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+    </nav>
+    <!--Home-->
+    <header>
+      <!--First container-->
+      <div class="container container__solid">
+        <div class="title__wrapper">
+          <h1>Creative Web Publisher</h1>
+          <h1>YeoJin's Portfolio</h1>
+        </div>
+      </div>
+      <!--Second container-->
+      <div class="container container__image" aria-hidden="true">
+        <div class="title__wrapper">
+          <h1>Creative Web Publisher</h1>
+          <h1>YeoJin's Portfolio</h1>
+        </div>
+      </div>
+    </header>
+    <!--about-->
+    <div class="about">
+      <div class="about__inner">
+        <div id="frame">      
+          <div id="card">
+            <div class="text">
+              <p>매일의 배움에 즐거움을 느끼며 웹퍼블리셔에 도전하게 되었습니다.
+                어제보다 더 성장하자는 마음을 가지고 오늘도 성장하는 김여진이 되겠습니다.</p>
+            </div>
+          <div id="light"></div>
+        </div>
+        </div>
+      </div>   
+      <div class="cover">
+        <p class="first-parallel"></p>
+      </div>
+    </div>
+    <!--site-->
+    <div class="site">  
+      <section class="site__container">
+        <div class="site__title">
+          <h1>work</h1>
+        </div>  
+        <div class="space-holder">
+          <div class="site__sticky">
+            <div class="horizontal">
+              <section role="feed" class="cards">
+                <article class="sample-card">
+                  <div class="top">
+                    <div class="left"><a href="assets/webstandard/webstandard.html" target="_blank"><img src="assets/img/webstandard.jpg" alt="webstandard"></a></div>
+                    <div class="right"><a href="assets/webstandard/webstandard.html" target="_blank">view site</a></div>
+                  </div>
+                  <div class="bottom">
+                    <p>웹 표준을 준수한 사이트입니다. 메뉴, 슬라이드, 탭 기능을 구현하였으며,
+                      css 호버효과 및 필터 효과를 적용하였습니다. lightbox플러그인을 활용한 갤러리를 구현하였습니다..</p>
+                  </div>
+                </article>
+                <article class="sample-card">
+                  <div class="top">
+                    <div class="left"><a href="assets/megabox/megabox.html" target="_blank"><img src="assets/img/responsive.jpg" alt="responsive"></a></div>
+                    <div class="right"><a href="assets/megabox/megabox.html" target="_blank">view site</a></div>
+                  </div>
+                  <div class="bottom">
+                    <p>반응형 사이트입니다. 반응형 이미지를 표현하는 picture태그를 사용하였고 래티나 디스플레이를 위한 이미지를 활용하는 법을 적용하였습니다.
+                      swiper플러그인을 활용하여 마우스 휠을 적용하여 접근성을 더 높였습니다. 유튜브 API를 활용하여 
+                      영화 트레일러를 재생할 수 있게 하였습니다. </p>
+                  </div>
+                </article>
+                <article class="sample-card">
+                  <div class="top">
+                    <div class="left"><a href="assets/nuldam/nuldam.html" target="_blank"><img src="assets/img/site.jpg" alt="site"></a></div>
+                    <div class="right"><a href="assets/nuldam/nuldam.html" target="_blank">view site</a></div>
+                  </div>
+                  <div class="bottom">
+                    <p>form, input태그를 활용한 회원가입 페이지를 제작하였습니다. float을 사용한 레이아웃을 사용하여 
+                      상세페이지를 제작하였습니다. </p>
+                  </div>
+                </article>
+                <article class="sample-card">
+                  <div class="top">
+                    <div class="left"><a href="https://react-sites2.netlify.app/" target="_blank"><img src="assets/img/blacktop.jpg" alt="blacktop"></a></div>
+                    <div class="right"><a href="https://react-sites2.netlify.app/" target="_blank">view site</a></div>
+                  </div>
+                  <div class="bottom">
+                    <p>반복문 함수를 통한 리액트 컴포넌트 작업과 뷰를 통해 작업하였습니다.
+                      netlify를 통한 정적 웹사이트를 쉽게 배포할 수  있도록 하였습니다.</p>
+                  </div>
+                </article>
+                <article class="sample-card">
+                  <div class="top">
+                    <div class="left"><a href="#" target="_blank"><img src="assets/img/reactblog.jpg" alt="reactblog"></a></div>
+                    <div class="right"><a href="#" target="_blank">view site</a></div>
+                  </div>
+                  <div class="bottom">
+                    <p>컴포넌트, props, state, JSX for 반복문, 이벤트 핸들러를 이용한 정렬, 수정, 추가, 삭제 기능을 추가하여
+                      간단한 블로그 형식의 UI 웹개발을 하였습니다. 
+                    </p>
+                  </div>
+                </article>
+                <article class="sample-card">
+                  <div class="top">
+                    <div class="left"><a href="https://reactfoodapp1.netlify.app/" target="_blank"><img src="assets/img/reactrecipe.jpg" alt="reactblog"></a></div>
+                    <div class="right"><a href="https://reactfoodapp1.netlify.app/">view site</a></div>
+                  </div>
+                  <div class="bottom">
+                    <p> 라우터로 페이지 나누기, Redux와 context API로 state 관리하기,           
+                      Ajax 등으로 서버 API 통신하는 법,                      
+                      자주 사용하는 외부 라이브러리 (Bootstrap, Styled component, SASS),
+                      자주 필요한 JavaScript ES6 문법들,                    
+                      lazy loading 등 간단한 성능개선법,                    
+                      서버프로젝트와 리액트 연동
+                     </p>
+                  </div>
+                </article>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--script-->
+    <div class="script">
+      <div class="script__title">
+        <h1>script</h1>
+      </div>
+      <div class="script__content">
+        <div class="script__sticky">
+          <div class="card__frame">
+            <div class="card">
+              <div class="front">
+                <a href="./assets/shootinggame/shootinggame.html" target="_blank"><img src="assets/img/game1.png" alt="game1"></a>
+              </div>
+              <div class="back">shooting game</div>
+            </div>
+            <div class="card">
+              <div class="front">
+               <a href="#" target="_blank"><img src="assets/img/game2.png" alt="game2"></a>
+              </div>
+              <div class="back">Card game</div>
+            </div>
+            <div class="card">
+              <div class="front">
+                <a href="./assets/molegame/index.html" target="_blank"><img src="assets/img/game3.png" alt="game3"></a>
+               </div>
+              <div class="back">mole game</div>
+            </div>
+            <div class="card">
+              <div class="front">
+                <a href="./assets/musicplayer/index.html" target="_blank"><img src="assets/img/game4.png" alt="game4"></a>
+               </div>
+              <div class="back">music play</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>       
+    <!--contact-->
+    <div class="contact">
+      <div class="contact__title">
+        <h1>Let's maek a thing</h1>
+      </div>
+      <div class="contact__link">
+        <a href="https://github.com/jjinvely" class="btn" target="_blank">
+            Github
+        </a>
+        <a href="https://www.notion.so/4cfd31f8e7d44529bc2211630e840cb0" class="btn" target="_blank">
+            Notion 
+        </a>
+        <a href="/assets/javascript/javascript.html"" class="btn" target="_blank">
+          study site 
+        </a>
+        <a href="#footer" class="btn">
+            rladuwls2003@naver.com
+        </a>
+    </div>
+    </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+ <script src="assets/js/javascript.js"></script>
+</body>
+</html>

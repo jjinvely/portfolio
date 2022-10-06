@@ -1,0 +1,37 @@
+
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2vw, 5vw, 8vw);
+  background-color: var(--color-light-grey);
+  color:var(--color-black);
+  text-transform: uppercase;}
+
+.contact__title>h1{
+    animation: bounce 0.5s ease-out alternate-reverse infinite;
+}
+
+
+@keyframes bounce {
+  100% { transform: translateY(-20%); }
+}
+
+.contact__link{background-color:  var(--color-navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  font-family: 'OTWelcomeBA';
+  color:var(--color-white);
+  font-size:30px;
+ }
+
+

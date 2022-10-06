@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <title>자바스크립트를 자바라!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/js.css" />  
+  <link rel="stylesheet" href="assets/css/fonts.css" /> 
+  <link rel="stylesheet" href="assets/css/style.css" />  
+  <link href="assets/css/prism.css" rel="stylesheet" />
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/prism.js"></script>
+  <script src="assets/js/script.js"></script>
+ 
+  
+  </head>
+
+  <body>
+    <header id="header">
+        <h1><a href="javascript.html">Javascript</a></h1>
+        <nav>
+            <ul>
+                <li><a href="reference01.html">기초 문법</a></li>
+                <li><a href="reference02.html">변수</a></li>
+                <li><a href="reference03.html">자료형</a></li>
+                <li><a href="reference04.html">for문</a></li>
+                <li class="active"><a href="reference05.html">연산자</a></li>
+                <li><a href="reference06.html">조건문</a></li>
+                <li><a href="reference07.html">반복문</a></li>
+                <li><a href="reference08.html">함수</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="doc">
+            <h2>연산자</h2>
+            <p><strong>연산자란</strong> 프로그래밍에서 연산에 쓰이는 기호들입니다. 연산자에는 산술연산자, 문자 결합 연산자, 대입 연산자, 증감 연산자, 비교 연산자, 논리 연산자가
+                있습니다.</p>
+
+            <h3>산술연산자</h3>
+            <p><strong>산술 연산자</strong>에는 더하기(+), 빼기(-), 곱하기(*), 나누기(/), 나머지(%)가 있습니다. 산술 연산자는 연산 대상 데이터가 반드시 2개 있어야하는 이항
+                연산자입니다.</p>
+
+            <div class="table"><table>
+                <caption>산술 연산자의 종류와 기본형</caption>
+                <thead>
+                    </thead><thead>
+                        <tr>
+                            <th>종류</th>
+                            <th>기본형</th>
+                            <th>설명</th>
+                        </tr>
+                    </thead>
+                <tbody class="center">
+                    <tr>
+                        <td>+</td>
+                        <td>A+B</td>
+                        <td>더하기</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>A-B</td>
+                        <td>빼기</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>A*B</td>
+                        <td>곱하기</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>A/B</td>
+                        <td>나누기</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>A%B</td>
+                        <td>나머지</td>
+                    </tr>
+                </tbody>
+            </table></div>
+
+            <div class="code">
+                <h4>산술 연산자 예제</h4>
+                <pre><code>&lt;script&gt;
+    var num1 = 15;
+    var num2 = 2;
+    var result;
+
+    result = num1 + num2;
+
+    document.write(result, "&lt;br&gt;");
+    result = num1 - num2;
+    document.write(result, "&lt;br&gt;");
+    result = num1 * num2;
+    document.write(result, "&lt;br&gt;");
+    result = num1 / num2;
+    document.write(result, "&lt;br&gt;");
+    result = num1 % num2;
+    document.write(result, "&lt;br&gt;");
+&lt;/script&gt;
+</code></pre>
+            </div>
+
+            <p><strong>결과</strong></p>
+            <div class="line">
+                <script>
+                    var num1 = 15;
+                    var num2 = 2;
+                    var result;
+
+                    result = num1 + num2;
+
+                    document.write(result, "<br>");
+                    result = num1 - num2;
+                    document.write(result, "<br>");
+                    result = num1 * num2;
+                    document.write(result, "<br>");
+                    result = num1 / num2;
+                    document.write(result, "<br>");
+                    result = num1 % num2;
+                    document.write(result, "<br>");
+                </script>17<br>13<br>30<br>7.5<br>1<br>
+            </div>
+
+            <h3>문자 결합 연산자</h3>
+            <p><strong>문자 결합 연산자</strong>는 피연산자가 문자형 데이터 입니다. 여러 개의 문자를 하나의 문자형 데이터로 결합할 때 사용합니다.</p>
+            <p>더하기 연산자에 피연산자로 문자형 데이터가 한 개라도 포함되어 있으면 다른 피연산자의 데이터형은 자동으로 문자형 데이터로 형 변환 되고 문자 결합이 이루어져 하나의 문자형 데이터를
+                반환합니다.</p>
+
+            <div class="line">
+                문자형 데이터 + 문자형 데이터 = 하나의 문자형 데이터<br>
+                ex) "do it" + "javascript" = "do it javascript";<br>
+                문자형 데이터 + 숫자형 데이터 = 하나의 문자형 데이터<br>
+                ex) "100" + 200 = "100200";<br>
+            </div>
+
+            <div class="code">
+                <h4>문자 결합 연산자 예제</h4>
+                <pre><code>&lt;script&gt;
+    var t1 = "학교종이";
+    var t2 = " 땡땡땡 ";
+    var t3 = 8282;
+    var t4 = " 어서 모이자";
+    var result;
+
+    result = t1 + t2 + t3 + t4;
+    document.write(result);  <span class="coment">//"학교종이 땡땡땡 8282 어서 모이자"</span>
+&lt;/script&gt;</code></pre>
+            </div>
+
+            <p><strong>결과</strong></p>
+            <div class="line">
+                <script>
+                    var t1 = "학교종이";
+                    var t2 = " 땡땡땡 ";
+                    var t3 = 8282;
+                    var t4 = " 어서 모이자";
+                    var result;
+
+                    result = t1 + t2 + t3 + t4;
+                    document.write(result);
+                </script>학교종이 땡땡땡 8282 어서 모이자
+            </div>
+
+            <h3>대입 연산자</h3>
+            <p><strong>대입연산자(=)</strong>는 연산된 데이터를 변수에 저장할 때 사용합니다. 복합 대입 연산자(+=, -=, *=, /=, %=)는 산술 연산자와 대입 연산자가 복합적으로
+                적용된 것을 말합니다.</p>
+
+            <div class="table">
+                <table>
+                    <caption>대입 연산자의 종류</caption>
+                    <thead>
+                        <tr>
+                            <th>종류</th>
+                            <th>풀이</th>
+                        </tr>
+                    </thead>
+                    <tbody class="center">
+                        <tr>
+                            <td>A = B</td>
+                            <td>A = B</td>
+                        </tr>
+                        <tr>
+                            <td>A -= B</td>
+                            <td>A = A-B</td>
+                        </tr>
+                        <tr>
+                            <td>A *= B</td>
+                            <td>A = A*B</td>
+                        </tr>
+                        <tr>
+                            <td>A /= B</td>
+                            <td>A = A/B</td>
+                        </tr>
+                        <tr>
+                            <td>A %= B</td>
+                            <td>A = A%B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="code">
+                <h4>대입 연산자 예제</h4>
+                <pre><code>&lt;script&gt;
+    var num1 = 10;
+    var num2 = 3;
+
+    num1 += num2; <span class="coment">//num1 = num1(10) + num2(3);</span>
+    document.write(num1, "&lt;br&gt;"); <span class="coment">//13</span>
+
+    num1 -= num2; <span class="coment">//num1 = num1(13) - num2(3);</span>
+    document.write(num1, "&lt;br&gt;"); <span class="coment">/10</span>
+
+    num1 *= num2; <span class="coment">//num1 = num1(10) * num2(3);</span>
+    document.write(num1, "&lt;br&gt;"); <span class="coment">//30</span>
+
+    num1 %= num2; <span class="coment">//num1 = num1(130 % num2(3);</span>
+    document.write(num1, "&lt;br&gt;"); <span class="coment">//0</span>
+</code></pre>
+            </div>
+
+            <p><strong>결과</strong></p>
+            <div class="line">
+                <script>
+                    var num1 = 10;
+                    var num2 = 3;
+
+                    num1 += num2;
+                    document.write(num1, "<br>");
+                    num1 -= num2;
+                    document.write(num1, "<br>");
+                    num1 *= num2;
+                    document.write(num1, "<br>");
+                    num1 %= num2;
+                    document.write(num1, "<br>");
+                </script>13<br>10<br>30<br>0<br>
+            </div>
+
+            <!-- <br>
+            <p>다음은 여러 개의 문자형 데이터로 저장된 HTML 태그를 복합 대입 연산자를 이용하여 하나의 문자로 결합한 다음 document.write(str);을 이용하여 화면에 출력하는 예제입니다.</p>
+            <div class="code">
+<pre><code>&lt;script&gt;
+    var str = "&lt;table border='1'&gt;";
+    str += "&lt;tr&gt;"
+    str += "&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;"
+    str += "&lt;/tr&gt;"
+    str += "&lt;/table&gt;"
+
+    document.write(str);
+&lt;/script&gt;</code></pre>
+            </div>
+
+            <br>
+            <p><strong>결과</strong></p>
+            <div class="line">
+                <script>
+                    var str = "<table border='1'>";
+                    str += "<tr>";
+                    str += "<td>1</td><td>2</td><td>3</td>";
+                    str += "</tr>";
+                    str += "</table>";
+
+                    document.write(str);
+                </script>
+            </div> -->
+
+            <h3>증감 연산자</h3>
+            <p><strong>증감 연산자</strong>에는 숫자형 데이터를 1씩 증가시키는 증가 연산자(++)와, 반대로 1씩 감소시키는 감소 연산자(--)가 있습니다. 증감 연산자는 피연산자가 한
+                개만 필요한 단항 연산자입니다. 증감 연산자는 변수의 어느 위치에 오는가에 따라 결괏값이 달라집니다.</p>
+            <div class="line">
+                1) 변수의 값을 1만큼 감소시킨다.<br>
+                (변수)--; 또는 --(변수);<br>
+                <br>
+                2) 변수의 값을 1만큼 증가시킨다.<br>
+                (변수)++; 또는 ++(변수);
+            </div>
+
+            <div class="line">
+                1) 먼저 B의 값이 1만큼 증가되고, 증가된 B의 값이 A에 대입된다.<br>
+                var A = ++B;<br>
+                <br>
+                2) 먼저 B의 값이 A에 대입되고, B가 1만큼 증가한다.<br>
+                var A = B++;
+            </div>
+
+            <div class="code">
+                <h4>증감 연산자 예제</h4>
+                <pre><code>&lt;scrip&gt;
+    var num1 = 10;
+    var num2 = 20;
+    var result;
+
+    num1--; <span class="coment">//num1 : 9</span>
+    document.write(num1, "&lt;br&gt;");
+
+    num1++; <span class="coment">//num1 : 10</span>
+    document.write(num1, "&lt;br&gt;");
+
+    result = num2++; <span class="coment">//result : 20, num2 : 21</span>
+    document.write(result, "&lt;br&gt;");
+
+    result = ++num2; <span class="coment">//result : 22, num2 : 22</span>
+    document.write(result,"&lt;br&gt;");
+&lt;/scrip&gt;</code></pre>
+            </div>
+
+            <p><strong>결과</strong></p>
+            <div class="line">
+                <script>
+                    var num1 = 10;
+                    var num2 = 20;
+                    var result;
+
+                    num1--;
+                    document.write(num1, "<br>");
+
+                    num1++;
+                    document.write(num1, "<br>");
+
+                    result = num2++;
+                    document.write(result, "<br>");
+
+                    result = ++num2;
+                    document.write(result, "<br>");
+                </script>9<br>10<br>20<br>22<br>
+            </div>
+
+            <h3>비교 연산자</h3>
+            <p><strong>비교 연산자</strong>는 두 데이터를 '크다, 작다, 같다'와 같이 비교할 때 사용하는 연산자입니다. 연산된 결괏값은 true(참) 또는 false(거짓)로 논리형
+                데이터를 반환합니다.</p>
+            <div class="table">
+                <table>
+                    <caption>비교 연산자의 종류</caption>
+                    <colgroup>
+                        <col style="width: 20%">
+                        <col style="width: 20%">
+                        <col style="width: 60%">
+                    </colgroup>
+                    <thead>
+                        </thead><thead>
+                            <tr>
+                                <th>종류</th>
+                                <th>설명</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">A &gt; B</td>
+                            <td class="center">A가 B보다 크다.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center">A &lt; B</td>
+                            <td class="center">A가 B보다 작다</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center">A &gt;= B</td>
+                            <td class="center">A가 B보다 크거나 같다.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center">A &lt;= B</td>
+                            <td class="center">A가 B보다 작거나 같다.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center">A == B</td>
+                            <td class="center">A와 B는 같다.</td>
+                            <td>숫자를 비교할 경우 자료형(type)은 숫자형이든 문자형이든 상관하지않고 표기된 숫자만 일치하면 true를 반환합니다. 가령, 숫자형 10과 문자형 "10"은
+                                같은 것으로 인식되어 true를 반환합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="center">A != B</td>
+                            <td class="center">A와 B는 다르다.</td>
+                            <td>숫자를 비교할 경우 자료형은 숫자형이든 문자형이든 상관하지 않고 표기된 숫자만 다르면 true를 반환합니다. 가령, 숫자형 10과 문자형 "10"은 같은
+                                것으로 인식되어 A!=B에 대해 false를 반환합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="center">A === B</td>
+                            <td class="center">A와 B는 같다.</td>
+                            <td>숫자를 비교할 경우 반드시 표기된 숫자와 자료형도 일치해야만 true를 반환합니다. 10과 "10"을 비교했을 경우 표기된 숫자는 같지만 하나는 숫자형
+                                10이고 하나는 문자형 "10"이므로 false를 반환합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="center">A !== B</td>
+                            <td class="center">A와 B는 다르다.</td>
+                            <td>숫자를 비교할 경우 반드시 표기된 숫자 또는 자료형이 일치하지 않을 때 true를 반환합니다. 가령, 10과 "10"을 비교했을 경우 표기된 숫자는 같지만
+                                하나는 숫자형 10이고 하나는 문자형 "10"이므로 이때는 true를 반환합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <p>비교 연산자 ==와 !=는 피연산자의 자료형(type)이 비교 연산자의 실행 결과에 영향을 미치지 않습니다.</p>
+            <div class="line">
+                var k=10, m="10";
+                k == 10; <span class="coment">//true</span>
+                m == 10; <span class="coment">//true</span>
+            </div>
+
+            <p>하지만 비교 연산자 중 ===과 !==는 피연산자 자료형에 따라 결괏값이 달라집니다.</p>
+            <div class="line">
+                var k=10, m="10";
+                k === 10; <span class="coment">//true</span>
+                m === 10; <span class="coment">//false</span>
+            </div>
+
+            <div class="code">
+                <h4>비교 연산자 예제</h4>
+                <pre><code>&lt;script&gt;
+    var a = 10;
+    var b = 20;
+    var c = 10;
+    var d = "20";
+    var result;
+
+    result = a &gt; b;
+    document.write(result, "&lt;br&gt;");
+    result = a &lt; b;
+    document.write(result, "&lt;br&gt;");
+    result = a &lt;= b;
+    document.write(result, "&lt;br&gt;");
+    result = a == f;
+    document.write(result, "&lt;br&gt;");
+    result = a != f;
+    document.write(result, "&lt;br&gt;");
+    result = a === f;
+    document.write(result, "&lt;br&gt;");
+&lt;/script&gt;
+</code></pre>
+            </div>
+
+            <p><strong>결과</strong></p>
+            <div class="line">
+                <script>
+                    var a = 10;
+                    var b = 20;
+                    var c = 10;
+                    var f = "20";
+                    var result;
+
+                    result = a > b;
+                    document.write(result, "<br>");
+                    result = a < b;
+                    document.write(result, "<br>");
+                    result = a <= b;
+                    document.write(result, "<br>");
+                    result = b == f;
+                    document.write(result, "<br>");
+                    result = a != b;
+                    document.write(result, "<br>");
+                    result = b === f;
+                    document.write(result, "<br>");
+                </script>false<br>true<br>true<br>true<br>true<br>false<br>
+            </div>
+
+            <h3>논리 연산자</h3>
+            <p><strong>논리 연산자</strong>에는 ||(or), &amp;&amp;(and), !(not)이 있으며, 논리 연산자는 피연산자가 논리형 데이터인 true 또는 false로 결괏값을 반환합니다.
+                ||(or) 연산자는 피연산자 중 하나만 true이면 true라는 결괏값을 반환합니다. 하지만 &amp;&amp;(and) 연산자는 피연산자 중 하나만 false이면 flase라는 결괏값을 반환합니다.
+                !(not)은 논리 부정 연산자로, 피연산자가 true이면 false라는 반대의 결괏값을 반환합니다.</p>
+
+            <div class="table">
+                <table>
+                    <caption>논리 연산자의 종류</caption>
+                    <thead>
+                        </thead><thead>
+                            <tr>
+                                <th>종류</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">||</td>
+                            <td>or 연산자라 부르며, 피연산자 중 값이 하나라도 true가 존재하면 true로 결괏값을 반환합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="center">&amp;&amp;</td>
+                            <td>and 연산자라 부르며, 피연산자 중 값이 하나라도 false가 존재하면 false로 결괏값을 반환합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="center">!</td>
+                            <td>not 연산자라 부르며, 단항 연산자입니다. 피연산자의 값이 true이면 반대로 flase로 결괏값을 반환합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+        
+    </main>
+
+
+</body>
+</html>

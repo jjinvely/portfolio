@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'OTWelcomeBA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-dark-grey:#828892;
+  --color-light-grey: #efefef;
+  --color-navy: #111f30;
+  --color-black: #000000;
+
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size:16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+

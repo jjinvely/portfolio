@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>브랜드소개</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="header_area box_inner clear">
+          <!--로고-->
+          <h1><a href="index01.html"></a></h1>
+          <div class="header_cont">
+            <ul class="util clear">
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="join.html">회원가입</a></li>
+            </ul>
+            <!--네비게이션-->
+          <nav>
+            <ul class="gnb clear">
+              <li><a href="#" class="openAll1">널담</a>
+              <div class="gnb_depth gnb_depth2_1">
+                <ul class="submenu_list">
+                  <li><a href="brand.html">브랜드 소개</a></li>
+                  <li><a href="letter.html">널담 베러레터</a></li>
+                </ul>
+              </div>
+              </li>
+              <li><a href="#" class="openAll2">구매하기</a>
+                <div class="gnb_depth gnb_depth2_2">
+                  <ul class="submenu_list">
+                    <li><a href="item.html">널담디져트</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="openAll3">고객센터</a>
+                  <div class="gnb_depth gnb_depth2_3">
+                    <ul class="submenu_list">
+                      <li><a href="notice.html">공지사항</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li><a href="#" class="openAll4">인사이트 널담</a>
+               
+              </li>
+            </ul>
+          </nav>
+        </div>
+        </div>
+      </header>
+      <!--//header-->
+      <!--container-->
+      <div id="container">
+        <div class="bodytext_area box_inner">
+          <img src="img/brand1.png" alt="brand">
+         <img src="img/brand2.png" alt="brand">
+        </div>
+       </div>
+      <!--//containerr-->
+       
+    
+     
+         <!--footer-->
+      <footer>
+        <div class="foot_area box_inner">
+          <ul class="foot_list clear">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+          </ul>
+          <h1><a href="#"></a></h1>
+          <p class="addr">
+            서울특별시 종로구 00동 00길 00빌딩 10층
+            <span class="gubun">/</span>
+            <span class="br_line">
+              E-mail : <span class="space0">abc@nuldam.com</span>
+            </span>
+            <p class="copy box_inner">Copyright &copy; Nuldam all right reserved </p>
+            
+            <ul class="snslink clear">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>      
+            </ul>
+          </p>
+        </div>
+      </footer>
+      <!--//footer-->
+    </div>
+    <script>
+      var isOver1 = false;
+      var isOver2 = false;
+
+      var isOver11 = false;
+      var isOver22= false;
+
+      var isOver111 = false;
+      var isOver222= false;
+
+      var isOver1111 = false;
+      var isOver2222= false;
+
+      function goHide1(){
+        // console.log('isOver1 :' + isOver1);
+        // console.log('isOver2 :' + isOver2);
+        //.gnb_depth2_1 영역에 있는 상태라면 페이드아웃이 되면 안됨
+        //레벨1 : f && 레벨2 : t
+        if(!isOver1 && !isOver2){
+          $('.gnb_depth2_1').fadeOut('fast');
+        } 
+      }
+
+      function goHide2(){
+        // console.log('isOver11 :' + isOver11);
+        // console.log('isOver22 :' + isOver22);
+        //.gnb_depth2_1 영역에 있는 상태라면 페이드아웃이 되면 안됨
+        //레벨1 : f && 레벨2 : t
+        if(!isOver11 && !isOver22){
+          $('.gnb_depth2_2').fadeOut('fast');
+        } 
+      }
+
+
+      function goHide3(){
+        // console.log('isOver111 :' + isOver111);
+        // console.log('isOver222 :' + isOver222);
+        //.gnb_depth2_1 영역에 있는 상태라면 페이드아웃이 되면 안됨
+        //레벨1 : f && 레벨2 : t
+        if(!isOver111 && !isOver222){
+          $('.gnb_depth2_3').fadeOut('fast');
+        } 
+      }
+
+      function goHide4(){
+        // console.log('isOver1111 :' + isOver1111);
+        // console.log('isOver2222 :' + isOver2222);
+        //.gnb_depth2_1 영역에 있는 상태라면 페이드아웃이 되면 안됨
+        //레벨1 : f && 레벨2 : t
+        if(!isOver1111 && !isOver2222){
+          $('.gnb_depth2_4').fadeOut('fast');
+        } 
+      }
+
+      $(document).ready(function(){
+        //네비게이션 - 여행정보
+        $('.openAll1').mouseover(function(){
+          $('.gnb_depth2_1').fadeIn('fast');
+          isOver1 = true;
+        });
+
+        $('.gnb_depth2_1').mouseover(function(){
+          isOver2 = true;
+        });
+        $('.openAll1').focus(function(){
+          $('.gnb_depth2_1').fadeIn('fast');
+        });
+
+
+        $('.openAll1').mouseout(function(){
+              //**********
+              isOver1 = false;
+              setTimeout('goHide1()', 200);
+          // $('.gnb_depth2_1').fadeOut('fast');
+        });
+        $('.gnb_depth2_1').mouseout(function(){
+              //**********
+              isOver2 = false;  
+              setTimeout('goHide1()',200);
+              // goHide1();      
+        });
+
+        $('.gnb_depth2_1 li:last-child a').blur(function(){
+          isOver2 = false;  
+          setTimeout('goHide1()',200);
+        });
+        
+        $('.openAll1').blur(function(){
+            $('.gnb_depth2_1').fadeOut('fast');
+        });
+      });
+
+
+        //네비게이션 - 고객센터
+        $('.openAll2').mouseover(function(){
+            $('.gnb_depth2_2').fadeIn('fast');
+          isOver11 = true;
+        });
+        $('.gnb_depth2_2').mouseover(function(){
+          isOver22 = true;
+        });
+        $('.openAll2').focus(function(){
+          $('.gnb_depth2_2').fadeIn('fast');
+        });
+        $('.openAll2').mouseout(function(){
+              //**********
+              isOver11 = false;
+              setTimeout('goHide2()', 200);
+          // $('.gnb_depth2_1').fadeOut('fast');
+        });
+
+        $('.gnb_depth2_2').mouseout(function(){
+          isOver22 = false;  
+              setTimeout('goHide2()',200);
+        });
+
+        $('.gnb_depth2_2 li:last-child a').blur(function(){
+          isOver22 = false;  
+          setTimeout('goHide2()',200);
+        });
+
+       $('.openAll2').blur(function(){
+          $('.gnb_depth2_2').fadeOut('fast');
+        });
+
+
+        //네비게이션 - 상품투어
+        $('.openAll3').mouseover(function(){
+            $('.gnb_depth2_3').fadeIn('fast');
+          isOver111 = true;
+        });
+        $('.gnb_depth2_3').mouseover(function(){
+          isOver222 = true;
+        });
+        $('.openAll3').focus(function(){
+          $('.gnb_depth2_3').fadeIn('fast');
+        });
+        $('.openAll3').mouseout(function(){
+              //**********
+              isOver111 = false;
+              setTimeout('goHide3()', 200);
+          // $('.gnb_depth2_1').fadeOut('fast');
+        });
+
+        $('.gnb_depth2_3').mouseout(function(){
+          isOver222 = false;  
+              setTimeout('goHide3()',200);
+        });
+
+        $('.gnb_depth2_3 li:last-child a').blur(function(){
+          isOver222 = false;  
+          setTimeout('goHide3()',200);
+        });
+        
+        $('.openAll3').blur(function(){
+          $('.gnb_depth2_3').fadeOut('fast');
+        });
+
+
+        //티켓가이드
+        $('.openAll4').mouseover(function(){
+            $('.gnb_depth2_4').fadeIn('fast');
+          isOver1111 = true;
+        });
+        $('.gnb_depth2_4').mouseover(function(){
+          isOver2222 = true;
+        });
+        $('.openAll4').focus(function(){
+          $('.gnb_depth2_4').fadeIn('fast');
+        });
+        $('.openAll4').mouseout(function(){
+              //**********
+              isOver1111 = false;
+              setTimeout('goHide4()', 200);
+          // $('.gnb_depth2_1').fadeOut('fast');
+        });
+        $('.gnb_depth2_4').mouseout(function(){
+          isOver2222 = false;  
+          setTimeout('goHide4()',200);
+        });
+
+        $('.gnb_depth2_4 li:last-child a').blur(function(){
+          isOver2222 = false;  
+          setTimeout('goHide4()',200);
+        });
+
+       $('.openAll4').blur(function(){
+          $('.gnb_depth2_4').fadeOut('fast');
+        });
+
+
+
+        $(document).ready(function(){
+        $('.switch').click(function(){
+          $(this).toggleClass('switchOn');
+        });
+      });
+
+    </script>
+  </body>
+</html>

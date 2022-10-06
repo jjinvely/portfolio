@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <title>자바스크립트를 자바라!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/js.css" />  
+  <link rel="stylesheet" href="assets/css/fonts.css" /> 
+  <link rel="stylesheet" href="assets/css/style.css" />  
+  <link href="assets/css/prism.css" rel="stylesheet" />
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/prism.js"></script>
+  <script src="assets/js/script.js"></script>
+ 
+  
+  </head>
+
+  <body>
+    <header id="header">
+        <h1><a href="javascript.html">Javascript</a></h1>
+        <nav>
+            <ul>
+                <li><a href="reference01.html">기초 문법</a></li>
+                <li><a href="reference02.html">변수</a></li>
+                <li><a href="reference03.html">자료형</a></li>
+                <li><a href="reference04.html">for문</a></li>
+                <li><a href="reference05.html">연산자</a></li>
+                <li class="active"><a href="reference06.html">조건문</a></li>
+                <li><a href="reference07.html">반복문</a></li>
+                <li><a href="reference08.html">함수</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="doc">
+            <h2>조건문</h2>
+            <p><strong>조건문</strong>은 조건식의 값이 참(true)인지, 거짓(false)인지에 따라 자바스크립트 코드를 제어합니다. 조건문의 종류에는 <strong>if 문</strong>, <strong>else 문</strong> 그리고 <strong>else if 문</strong>이 있습니다.</p>
+
+            <h3>if 문</h3>
+            <p>if 문은 조건식을 만족(true)할 경우에만 코드를 실행합니다. 조건식은 앞에서 배웠던 Boolean() 내장 메서드와 마찬가지로 그 어떤 데이터를 입력해도 true 또는 false를 반환합니다.</p>
+
+            <div class="code">
+                <h4>기본형</h4>
+<pre><code>if(조건식){
+    자바스크립트 코드;
+}</code></pre>
+            </div>
+
+            <div class="code">
+                <h4>예제</h4>
+<pre><code>var num=100;
+if(num&lt;500){
+    document.write("hello");&nbsp;&nbsp;&nbsp;<span class="coment">//true를 반환합니다.</span>
+}</code></pre>
+            </div>
+
+            <h4 class="mt30">조건식에 논리형 데이터가 아닌 다른 형이 오는 경우</h4>
+            <p>조건식에 논리형 데이터(true, false)가 아닌 다른 형의 데이터가 입력되어도 true 또는 false로 인식됩니다. 다음 값이 조건식에 입력되면 false를 반환하지만 그 밖의 값은 true로 인식합니다.</p>
+
+            <div class="line">
+                0, null, ""(빈문자), undefined
+            </div>
+
+            <div class="code">
+                <h4>false를 반환하는 값</h4>
+<pre><code>var num=0;
+if(num){&nbsp;&nbsp;&nbsp;<span class="coment">//num이 false를 반환해서 코드가 실행되지 않는다.</span>
+    document.write(num);
+}</code></pre>
+            </div>
+
+            <h3>else문</h3>
+            <p>else문은 조건식을 만족할(true) 경우와 만족하지 않을(false) 경우에 따라 실행되는 코드가 달라집니다.</p>
+
+            <div class="code">
+                <h4>기본형</h4>
+<pre><code>if(조건식){
+    자바스크립트 코드1;
+}else{
+    자바스크립트 코드2;
+}</code></pre>
+            </div>
+
+            <div class="code">
+                <h4>else문 예제</h4>
+<pre><code>var yourNumber = prompt("좋아하는 숫자를 입력하시오.");
+var num = yourNumber % 2;
+
+if(num){
+    document.write("당신이 좋아하는 숫자는 홀수입니다.");&nbsp;&nbsp;&nbsp;<span class="coment">//홀수 입력시 실행</span>
+}else{
+    document.write("당신이 좋아하는 숫자는 짝수입니다.");&nbsp;&nbsp;&nbsp;<span class="coment">//짝수 입력시 실행</span>
+}</code></pre>
+            </div>
+
+            <h3>else if문</h3>
+            else if문은 두 가지 이상의 조건식과 정해 놓은 조건식을 만족하지 않았을 때 실행되는 코드로 이루어져있습니다.
+
+            <div class="code">
+                <h4>기본형</h4>
+<pre><code>if(조건식1){
+    코드1;
+}else if(조건식2){
+    코드2;
+}else if(조건식3){
+    코드3;
+}else{
+    코드4;
+}
+</code></pre>
+            </div>
+
+            <div class="code">
+                <h4>else if문 예제</h4>
+<pre><code>var mon = prompt("현재는 몇 월입니까?", "0");
+
+if(mon &gt;= 9 &amp;&amp; mon &lt;= 11){
+    document.write("독서의 계절 가을이네요!!");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment">//9 or 10 or 11 입력시 실행</span>
+}else if(mon &gt;=6 &amp;&amp; mon &lt;= 8){
+    document.write("여행가기 좋은 여름이네요!!");&nbsp;&nbsp;&nbsp;<span class="coment">//6 or 7 or 8 입력시 실행</span>
+}else if(mon &gt;= 3 &amp;&amp; mon &lt;= 5){
+    document.write("햇살 가득한 봄이네요!!");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment">//3 or 4 or 5 입력시 실행</span>
+}else{
+    document.write("스키의 계절 겨울이네요!!");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment">//그 외 입력시 실행</span>
+}</code></pre>
+            </div>
+
+            <h3>중첩 if문</h3>
+            <p>조건문 안에 조건문이 있으면 중첩 if문이라고 합니다.</p>
+
+            <div class="code">
+                <h4>기본형</h4>
+<pre><code>if(조건식1){
+    if(조건식2){
+        자바스크립트 코드;
+    }
+}</code></pre>
+            </div>
+            <p>중첩 if문은 바깥쪽에 있는 조건문인 조건문1을 만족해야만 안쪽에 있는 조건문인 조건문 2를 검사합니다. 만일 안쪽 if문의 조건식2를 만족하지 않으면 바깥쪽 조건문인 조건문1의 중괄호 안에 있는 코드만 실행하고 종료됩니다.</p>
+
+            <div class="code">
+                <h4>중첩 if문 예제</h4>
+<pre><code>var id = "easy1004";
+var pw = "112233";
+
+var user_id = prompt("ID?","");
+var user_pw = prompt("Password?","");
+
+if(id == user_id){
+    if(pw == user_pw){
+        document.write(user_id+"님 반갑습니다.");&nbsp;&nbsp;&nbsp;<span class="coment">//id와 pw가 모두 일치하면 실행</span>
+    }else{
+        alert("비밀번호가 일치하지 않습니다.");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment">//id는 일치하고 pw가 불일치하면 실행</span>
+        location.reload();  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment">//브라우저새로고침</span>
+    }
+}else{
+    alert("아이디가 일치하지 않습니다.");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="coment">//id가 불일치 하면 실행합니다</span>
+    location.reload();
+}</code></pre>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>
