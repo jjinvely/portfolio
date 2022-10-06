@@ -34,9 +34,11 @@
 #wrap{overflow: hidden;}
 
 /*top banner*/
+
+.menu{height:100px;}
+
 .top__ban {
   overflow: hidden;
-  width:100%;
   background-color:#4c3819;
 }
 
@@ -72,7 +74,6 @@
   position: sticky;
   top:0;
   z-index: 998; 
-  height: 70px;
   background-color: #fff; 
   box-sizing: border-box;
 }
@@ -143,7 +144,11 @@
   font-size:16px;
   font-family: 'Oswald', sans-serif;}
 
-
+.gnb__mobile.header-white{
+  background-color: #fff;
+  position:fixed;
+  top:0;
+}
 
 /*mobile header*/
 .gnb__mobile{
@@ -151,31 +156,18 @@
   position:relative;
 } 
 
+
 #menu-open.menu-icon{
   width: 30px;
-  left:20px;
-  top:40px;
-  margin:0;
-  position:fixed;
-  z-index:99;
+  padding:20px;
+  position: relative;
+  z-index: 300;
+  
 }
-
-.lines-button-wrap{
-  width:30px;
-  height:30px;
-  cursor:pointer;
-  position:relative;
-  display: inline-block;
-}
-
 
 .lines-button{
   width: 30px;
   height: 22px;
-  position: absolute;
-  top: 8px;
-  left: 7px;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -303,6 +295,7 @@
   padding:0;
   z-index:1;
 }
+
 
 .swiper-wrapper{
   position:relative;

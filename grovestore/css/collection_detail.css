@@ -1,0 +1,132 @@
+
+.detail__title{
+  text-align: center;
+  padding:30px 0;
+  font-size: 30px;
+}
+
+.detail__area img{
+  display: block;
+  vertical-align: top;
+  margin:0px auto;
+  text-align: center;
+}
+
+
+/****/
+.collection__detail.wrap{
+  position: relative;
+  margin:100px 0;
+  background: linear-gradient(0deg,#e9e3d6,#e9e3d6) no-repeat;
+  background-size: 100% 60%;
+}
+
+.collection__detail .inner{position: relative;
+margin: 0 auto;
+width: 1300px;
+height: 150vh;}
+
+
+.collection__detail .inner .c1 img{width:350px;}
+.collection__detail .inner .c2 img{width:400px;}
+.collection__detail .inner .c3 img{width:350px;}
+.collection__detail .inner .c1{
+  position: absolute;
+  left:10%;
+  top:10%;
+}
+
+.collection__detail .inner .c2{
+  position: absolute;
+  right:20%;
+  top:10%;
+}
+
+.collection__detail .inner .c3{
+  position: absolute;
+  right:30%;
+  top:40%;
+}
+
+.slogan{position:absolute;
+right:15%;
+top:10%;}
+
+.slogan img{width: 40px;
+height: 700px;}
+
+.collection__detail .c1 p{
+  margin-bottom: 29px;
+  font-size: 72px;
+  font-weight: 300;
+  color:#080707;
+}
+
+.collection__detail .c1 p span{
+  width:212px;
+  height:4px;
+  background-color: #0b0b0a;
+  display: block;
+}
+
+.collection__detail .c1 div{
+  width: 451px;
+  height: 679px;
+  overflow:hidden;
+}
+
+.collection__detail .c1 div:hove img{
+  transform:scale(1.1);
+}
+
+.bg{
+  position:relative;
+  background: url(../img/main/main01.jpg) center top no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 611px;
+  background-color: #fff;
+}
+
+
+.detail2{
+  position: relative;
+  margin:100px 0;
+ 
+  background-size: 100% 60%;
+}
+.detail2 .inner{
+  margin: 0 auto;
+width: 1300px;
+height: 150vh;
+}
+
+.detail2 ul{display: flex;
+align-items: flex-end;
+justify-content: flex-end
+}
+
+.detail2 ul li{margin:20px 10px;}
+.detail2 .c1 img{
+  width:400px;
+
+}
+
+.detail2 .c2 img{
+  width: 300px;
+}
+
+.detail2__title{padding:20px;
+word-break: break-all;}
+
+.detail3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.detail3__title{
+  width:500px;
+  margin:0 auto;
+}

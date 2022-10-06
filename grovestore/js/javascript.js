@@ -1,4 +1,20 @@
 
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
+
+const navbar = document.querySelector('.gnb__mobile');
+const navbarHeight = navbar.getBoundingClientRect().height;
+
+document.addEventListener('scroll',()=>{
+    if(window.scrollY>navbarHeight){
+        navbar.classList.add('header-white');
+    }else{
+        navbar.classList.remove('header-white');
+    }
+});
+
 //nav
 $(function(){   
     $('.gnb__left>ul>li').mouseenter(function(){
@@ -50,9 +66,7 @@ tabBtn.click(function(e){
 var swiper02 = new Swiper('.swiper-container2',{
     slidesPerView: 5,
     spaceBetween: 10,
-    mousewheel: {
-        invert: true,
-    },
+    mousewheel: false,    
     keyboard: {
         enabled: true,
         onlyInViewport: false,
@@ -79,6 +93,8 @@ var swiper02 = new Swiper('.swiper-container2',{
 
 //collection 
 var swiper03 = new Swiper('.swiper-container3',{
+
+
     slidesPerView: 3,
     spaceBetween: 10,
 
@@ -86,9 +102,7 @@ var swiper03 = new Swiper('.swiper-container3',{
         el: '.swiper-pagination',
         clickable: true,
     },
-    mousewheel: {
-        invert: true,
-    },
+    mousewheel: false,
     keyboard: {
         enabled: true,
         onlyInViewport: false,
