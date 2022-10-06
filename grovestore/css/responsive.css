@@ -21,7 +21,6 @@
   }
   .nav-wrap a{font-size:12px;}
   .logoB{display: inline;
-    width:80px;
   height: 35px;}
   .model-slide img{width: 220px;height: 420px;}
 }
@@ -29,8 +28,7 @@
 @media (max-width: 960px){
   .row{padding: 50px 10px 0;}
   .logoB{display: inline;
-    width:80px;
-  height: 35px;}
+  height: 30px;}
   .text__title{font-size: 24px;}
   .tab__list{
     display: flex;
@@ -56,11 +54,6 @@
 }
 
 @media (max-width: 768px){
-  .gnb__wrap{height: 50px;
-  }
-  .logoB{display: inline;
-    width:80px;
-  height: 25px;}
   .text__title{
     display: block;
     text-align: center;
@@ -86,8 +79,6 @@
 
 
 @media (max-width: 600px){
-  .gnb__wrap{
-  height: 50px;}
   .gnb .logo img{width: 80px;
     height: 30px;
     padding:9px 0;
