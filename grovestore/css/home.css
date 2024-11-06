@@ -282,9 +282,9 @@
 /*slider*/
 .slider{
   width: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
-.slider .swiper-slide img{height: 100%;}
+/* .slider .swiper-slide img{height: 100%;} */
 
 .swiper-container{
   width: 100%;
